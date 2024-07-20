@@ -1,8 +1,112 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;   
 }
 
-.header{
-    background-color: #fff;
+.header {
+    margin-top: 20px;
+    height: 70px;
+}
+
+#main-content{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* background-color: black; */
+    overflow: hidden;
+    box-sizing: border-box;
+    /* margin-top: 80px; */
+}
+
+.mleft {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.mright {
+    /* background-color: #4B0082; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.name {
+    width: 60%;
+    margin-left: 20%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 20%;
+
+}
+
+@media screen and (max-width: 950px){
+    .mleft{
+        width: 100%;
+    }
+    .name{
+        width: 100%;
+    }
+    .mright{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .mleft{
+        width: 300px;
+    }
+    .name{
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width: 1160px) {
+    .mleft{
+        width: 40%;
+    }
+    .name{
+        width: 100%;
+    }
+} */
+
+.mrimg{
+    filter: drop-shadow(10px 10px 10px #4B0082);
+}
+
+.service{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.products{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-color: violet;
+}
+
+#main-content:target ~ .header .nav-links #home,
+#service:target ~ .header .nav-links #service,
+#products:target ~ .header .nav-links #products,
+#about:target ~ .header .nav-links #about,
+#footer:target ~ .header .nav-links #footer{
+    background-color: white;
+    border-radius: 5px;
 }

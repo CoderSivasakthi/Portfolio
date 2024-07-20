@@ -5,12 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="/Portfolio/navigationbar/navbar.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
     <section class="body">
-    <section id="header">
-        <iframe src="navigationbar/navbar.html" frameborder="0" width="100%" class="header"></iframe>
+        <section id="header">
+            <!-- <iframe src="/Portfolio/navigationbar/navbar.html" frameborder="0" width="100%" class="header"></iframe> -->
+            <div>
+                <nav class="nav">
+                    <i class="uil uil-bars navOpenBtn"></i>
+                    <a href="#" class="logo">CoderSiva</a>
+    
+                    <ul class="nav-links">
+                        <i class="uil uil-bars navCloseBtn"></i>
+                        <li><a href="#main-content" class="nav-link active" id="home">Home</a></li>
+                        <li><a href="#service" class="nav-link">Blog</a></li>
+                        <li><a href="#products" class="nav-link">Portfolio</a></li>
+                        <li><a href="#about" class="nav-link" >About Us</a></li>
+                        <li><a href="#footer" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    <i class="uil uil-search search-icon" id="searchIcon"></i>
+                    <div class="search-box">
+                        <i class="uil uil-search search-icon"></i>
+                        <input type="text" placeholder="search...">
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section id="main-content">
+            <div class="mleft">
+                <iframe src="/Portfolio/maincontent/name_revel.html" frameborder="0" class="name"></iframe>
+            </div>
+            <div class="mright">
+                <div class="mrimg">
+                    <img src="/Portfolio/maincontent/myimg.png" alt="" width="600px" height="100%">
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service"></section>
+        <section class="products" id="products"></section>
+        <section class="about" id="about"></section>
+        <section class="footer" id="footer"></section>
     </section>
-</section>
+    <script src="/Portfolio/Dashboard/dashboard.js"></script>
+    <script src="/Portfolio/navigationbar/nav.js"></script>
 </body>
 </html>
