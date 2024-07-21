@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navbar</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="nav.js" defer></script>
@@ -13,15 +13,15 @@
         <div>
             <nav class="nav">
                 <i class="uil uil-bars navOpenBtn"></i>
-                <a href="#" class="logo"> CoderSiva</a>
+                <a href="#" class="logo">CoderSiva</a>
 
                 <ul class="nav-links">
                     <i class="uil uil-bars navCloseBtn"></i>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#main-content" class="nav-link active" id="home">Home</a></li>
+                    <li><a href="#service" class="nav-link" id="service">Services</a></li>
+                    <li><a href="#products" class="nav-link" id="products">Products</a></li>
+                    <li><a href="#about" class="nav-link" id="about">About Us</a></li>
+                    <li><a href="#footer" class="nav-link" id="footer">Contact Us</a></li>
                 </ul>
                 <i class="uil uil-search search-icon" id="searchIcon"></i>
                 <div class="search-box">
@@ -31,11 +31,5 @@
             </nav>
         </div>
     </section>
-    <!-- <section class="tbody">
-        <div class="headname">Coder</div> 
-        <div> 
-            <span class="lines">Siva. Lets imagine his world in the Portfolio.</span>
-        </div>
-    </section> -->
 </body>
 </html>

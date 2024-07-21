@@ -113,7 +113,7 @@ a{
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width:950px) {
     .nav{
         padding: 15px 50px;
     }
@@ -172,3 +172,4 @@ a{
     }
     
 }
+

@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const setActiveLink = (activeLink) => {
         navLinks.forEach((link) => link.classList.remove('active'));
         activeLink.classList.add('active');
-        
     };
 
     navLinks.forEach(link => {
@@ -26,18 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('scroll', () => {
-        const scrollPosition = window.scrollY + window.innerHeight / 2;
+        const scrollPosition = window.scrollY+window.innerHeight /5;
 
         if (scrollPosition >= footer.offsetTop) {
-            setActiveLink(navLinks[4]);  // Contact Us link
+            setActiveLink(navLinks[4]); 
         } else if (scrollPosition >= about.offsetTop) {
-            setActiveLink(navLinks[3]);  // About Us link
+            setActiveLink(navLinks[3]);
         } else if (scrollPosition >= products.offsetTop) {
-            setActiveLink(navLinks[2]);  // Products link
+            setActiveLink(navLinks[2]); 
         } else if (scrollPosition >= service.offsetTop) {
-            setActiveLink(navLinks[1]);  // Services link
+            setActiveLink(navLinks[1]);
         } else {
-            setActiveLink(navLinks[0]);  // Home link
+            setActiveLink(navLinks[0]);
         }
     });
 });

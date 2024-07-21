@@ -13,14 +13,18 @@
 .fname {
     display: inline-block;
     white-space: nowrap;
+    color: yellow;
     animation: showup 10s forwards;
+    filter: drop-shadow(10px 10px 10px #4B0082);
 }
 
 .midname {
     display: inline-block;
     white-space: nowrap;
+    color: yellow;
     margin-left: -355px;
     animation: slidein 7s forwards;
+    filter: drop-shadow(10px 10px 10px #4B0082);
 }
 
 .lastname {
@@ -28,13 +32,15 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    color: #4B0082;
+    color: yellow;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
     font-weight: 1000;
-    font-size: 70px;
+    font-size: 90px;
     width: 100%;
     margin-top: 10px;
+    filter: drop-shadow(10px 10px 10px #4B0082);
+
 }
 
 .lastname::after, .lastname::before {
@@ -83,4 +89,32 @@
     }
 }
 
+@media screen and (max-width: 700px){
+    .fname,.midname{
+        font-size: 34px;
+        color: orange;
+        filter: drop-shadow(10px 10px 10px #4B0082);
+    }
+    .lastname{
+        font-size: 54px;
+        width: 200px;
+        color: orange;
+        filter: drop-shadow(10px 10px 10px #4B0082);
+    }
+}
 
+@media screen and (max-width:900px) {
+    .fname,.midname{
+        font-size: 50px;
+        color: #4B0082;
+        filter: drop-shadow(10px 10px 10px aqua);
+        overflow-y: hidden;
+    }
+    .lastname{
+        font-size: 70px;
+        width:100%;
+        color: #4B0082;
+        filter: drop-shadow(10px 10px 10px aqua);
+        overflow-y: hidden;
+    }
+}
