@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const home = document.getElementById('main-content');
     const service = document.getElementById('service');
     const products = document.getElementById('products');
+    const projects = document.getElementById('projects');
     const about = document.getElementById('about');
     const footer = document.getElementById('footer');
 
@@ -28,10 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrollPosition = window.scrollY+window.innerHeight /5;
 
         if (scrollPosition >= footer.offsetTop) {
-            setActiveLink(navLinks[4]); 
+            setActiveLink(navLinks[5]); 
         } else if (scrollPosition >= about.offsetTop) {
+            setActiveLink(navLinks[4]);
+        }else if (scrollPosition >= projects.offsetTop) {
             setActiveLink(navLinks[3]);
-        } else if (scrollPosition >= products.offsetTop) {
+        }else if (scrollPosition >= products.offsetTop) {
             setActiveLink(navLinks[2]); 
         } else if (scrollPosition >= service.offsetTop) {
             setActiveLink(navLinks[1]);
@@ -39,4 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
             setActiveLink(navLinks[0]);
         }
     });
-});
+}); 

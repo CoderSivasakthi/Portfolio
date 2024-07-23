@@ -92,19 +92,23 @@
 .service{
     width: 100%;
     height: 100vh;
-    background-color: red;
 }
 
 .products{
     width: 100%;
-    height: 100vh;
-    background-color: green;
+    height: 220vh;
 }
 
 .about{
     width: 100%;
+    height: 150vh;
+    background-color: black;
+}
+
+.projects{
+    width: 100%;
     height: 100vh;
-    background-color: blue;
+    background-color: red;
 }
 
 .footer{
@@ -113,12 +117,23 @@
     background-color: violet;
 }
 
+@media (max-width: 400px){
+    .products{
+        height: 370vh;
+    }
+}
+
+@media (max-width: 950px){
+    .products{
+        height: 230vh;
+    }
+}
+
 body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
     background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, #f72585 98%);
-    animation: gradient 15s ease infinite;
     
 }
 
@@ -146,28 +161,6 @@ body {
     bottom: -2.5em;
     animation: wave 20s -1s reverse infinite;
     opacity: 0.9;
-}
-
-@keyframes bg {
-    2% {
-        transform: translateX(1);
-    }
-
-    25% {
-        transform: translateX(-25%);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-25%);
-    }
-
-    100% {
-        transform: translateX(1);
-    }
 }
 
 .nav-link.active {
