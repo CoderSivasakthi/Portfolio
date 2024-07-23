@@ -15,7 +15,7 @@
     white-space: nowrap;
     color: yellow;
     animation: showup 10s forwards;
-    filter: drop-shadow(10px 10px 10px #4B0082);
+    filter: drop-shadow(10px 10px 5px #4B0082);
 }
 
 .midname {
@@ -24,7 +24,8 @@
     color: yellow;
     margin-left: -355px;
     animation: slidein 7s forwards;
-    filter: drop-shadow(10px 10px 10px #4B0082);
+    filter: drop-shadow(10px 10px 5px #4B0082);
+    
 }
 
 .lastname {
@@ -40,7 +41,7 @@
     width: 100%;
     margin-top: 10px;
     filter: drop-shadow(10px 10px 10px #4B0082);
-
+    text-shadow: palevioletred;
 }
 
 .lastname::after, .lastname::before {
